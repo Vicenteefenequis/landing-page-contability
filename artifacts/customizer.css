@@ -1,0 +1,110 @@
+:root {
+  --brand-primary: #1a73e8;
+  --brand-secondary: #0f4c81;
+  --brand-accent: #fbbc05;
+  --brand-neutral: #f5f7fb;
+  --brand-text: #0f172a;
+}
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--brand-text);
+  background-color: #ffffff;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.wp-block-button__link {
+  border-radius: 999px;
+  padding: 14px 32px;
+  font-weight: 600;
+}
+
+.is-style-outline .wp-block-button__link {
+  background: transparent;
+  color: var(--brand-secondary);
+  border: 2px solid var(--brand-secondary);
+}
+
+.hero-section {
+  padding: 96px 0 64px;
+  background: linear-gradient(135deg, var(--brand-neutral) 0%, #ffffff 60%);
+}
+
+.hero-section h1 {
+  font-size: clamp(2.5rem, 5vw, 3.2rem);
+}
+
+.section-differentials {
+  background: #ffffff;
+  padding: 64px 0;
+}
+
+.section-services {
+  background: var(--brand-neutral);
+  padding: 72px 0;
+}
+
+.section-services .wp-block-column {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 18px 40px rgba(15, 76, 129, 0.08);
+}
+
+.section-how-it-works {
+  padding: 72px 0;
+}
+
+.section-how-it-works .wp-block-group {
+  border-left: 4px solid var(--brand-primary);
+  padding-left: 24px;
+  margin-bottom: 32px;
+}
+
+.section-results {
+  background: radial-gradient(circle at top right, rgba(26, 115, 232, 0.15), transparent 60%);
+  padding: 72px 0;
+}
+
+.section-cta {
+  padding: 64px 48px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  color: #fff;
+  text-align: center;
+}
+
+.section-cta .wp-block-button__link {
+  background: #fff;
+  color: var(--brand-secondary);
+}
+
+.section-contact {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 72px 0;
+}
+
+.section-contact a {
+  color: var(--brand-accent);
+}
+
+.site-footer {
+  font-size: 0.9rem;
+  color: #64748b;
+  padding: 24px 0 16px;
+}
+
+@media (max-width: 782px) {
+  .hero-section {
+    padding: 72px 0 48px;
+  }
+
+  .section-services .wp-block-column {
+    margin-bottom: 24px;
+  }
+}
